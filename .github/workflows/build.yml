@@ -12,7 +12,7 @@ env:
   POSTGRESQL_USER: postgres
   POSTGRESQL_PASSWORD: erejz%$FFE%fvrg324
   JAVA_VERSION: 1.15
-  CI: false
+#  CI: false
 
 jobs:
   build:
@@ -34,4 +34,6 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
       - name: Maven Clean Package
         run: |
-          ./mvnw --no-transfer-progress clean package -P build-frontend -e -X
+          ./mvnw --no-transfer-progress clean package -P build-frontend
+        env:
+          CI: false
