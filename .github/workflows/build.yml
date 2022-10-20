@@ -12,6 +12,7 @@ env:
   POSTGRESQL_USER: postgres
   POSTGRESQL_PASSWORD: erejz%$FFE%fvrg324
   JAVA_VERSION: 1.15
+  CI: false
 
 jobs:
   build:

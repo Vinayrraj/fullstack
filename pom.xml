@@ -238,7 +238,7 @@
                                     <goal>npm</goal>
                                 </goals>
                                 <configuration>
-                                    <arguments>run build</arguments>
+                                    <arguments>run build CI=false</arguments>
                                 </configuration>
                             </execution>
                         </executions>
